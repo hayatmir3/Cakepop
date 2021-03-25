@@ -1,0 +1,141 @@
+﻿body {
+position: absolute;
+height: 2000px;
+width: 1240px;
+padding: 0px;
+margin: 0px;
+}
+
+#form1 {
+position: absolute;
+height: 2000px;
+width: 1265px;
+margin: 0px;
+padding: 0px;
+background-color: brown;
+}
+
+.site-header {
+    font-family: sans-serif;
+    display: flex;
+    color: black;
+    z-index:999;
+    border-bottom: 1px solid #e7e7e7;
+    transition: right 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    align-items: flex-start;
+    justify-content: space-between;
+    position: fixed;
+    font-weight: bold;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    width: 1265px;
+    height: 70px;
+    background-color: white;
+    font-size: 15px;
+}
+    .site-header.classic{
+        z-index:999;
+    }
+
+    h1 {
+        margin: 0px;
+    }
+
+#logo {
+    position:absolute;
+    left: 60px;
+    top: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+    .site-header.header-scroll {
+        position: absolute !important;
+    }
+
+        .site-header.header-scroll:not(.fix) {
+            right: 0 !important;
+        }
+
+    .site-header.fix{
+        position:fixed !important;
+        transform: translateY(-100%);
+    }
+
+        .site-header.fix.ready {
+            transition: right 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 100ms ease-in-out;
+        }
+
+        .site-header.fix.animate{
+            transform: translateY(0);
+        }
+
+.site-nav-classic {
+    position: absolute;
+    width: 1265px;
+    left: 0px;
+    top: 0;
+    color: black;
+    clear: both;
+}
+
+    .maincontainer {
+        list-style-type: none;
+        float: left;
+        width: 1265px;
+        color: red;
+        margin: 0;
+        padding: 0;
+    }
+
+    .maincontainer li {
+        display: inline;
+    }
+
+    .maincontainer li a {
+        float: left;
+        color: #565656;
+        padding: 35px 46px;
+        position: relative;
+        left: 200px;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    li a:hover, .has-submenu:hover .drop {
+        color: #5b6570;
+    }
+
+    .submenu {
+        display: none;
+    }
+
+    .submenu li {
+        position: relative;
+        color: #565656;
+        left: 150px;
+        top: -20px;
+    }
+
+    .has-submenu:hover .submenu {
+        position: absolute;
+        display: block;
+        width: 1225px;
+        height: 60px;
+        position: absolute;
+        margin: 70px 0 0 0;
+        z-index: 9999;
+        background-color: white;
+    }
+
+    .submenu li a:hover {
+        display: block;
+        float: left;
+        color: #5b6570;
+    }
+
+
+#content {
+    top: 200px;
+}

@@ -4,18 +4,85 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>Cake Pop</title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link type="text/css" rel="stylesheet" href="Assets/Css/Masterstyle.css" />
+    <link type="text/css" rel="stylesheet" href="~/Assets/Css/StyleMaster.css" runat="server" />
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <div class="site-header classic header-scroll">
+
+            <h1>
+                <a href="Home.aspx">
+                    <img alt="logo" src="/Assets/Img/Home/logo--01.svg" id="logo" />
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </a>
+            </h1>
+            <div>
+                <nav class="site-nav-classic">
+                    <ul class="maincontainer">
+                        <li>
+                            <a href="New.aspx">
+                                <span>New</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Cakes.aspx">
+                                <span>Cakes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Babka.aspx">
+                                <span>Babka</span>
+                            </a>
+                        </li>
+                        <li class="has-submenu" aria-haspopup="true">
+                            <a href="CupCakes.aspx" class="drop">
+                                <span>CupCakes</span>
+                            </a>
+                            <ul class="submenu" >
+                                <li>
+                                    <a href="#">
+                                        <span>Classic</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Organic</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>all CupCakes</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="CakeSupplies.aspx">
+                                <span>CakeSupplies</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="content">
+            <asp:ContentPlaceHolder id="Home" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder id="New" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder id="Cakes" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder id="Babka" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder id="CupCakes" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder id="CakeSupplies" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
     </form>
 </body>
 </html>
