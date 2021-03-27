@@ -8,9 +8,11 @@
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
     <link type="text/css" rel="stylesheet" href="~/Assets/Css/StyleMaster.css" runat="server" />
+    <script src="https://kit.fontawesome.com/55b95056a6.js" crossorigin="anonymous">
+    </script>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <div id="header">
         <div class="site-header classic header-scroll">
 
             <h1>
@@ -19,8 +21,8 @@
                     <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
                 </a>
             </h1>
-            <div>
-                <nav class="site-nav-classic">
+            <div class="site-nav-classic">
+                <nav>
                     <ul class="maincontainer">
                         <li>
                             <a href="New.aspx">
@@ -44,7 +46,7 @@
                             <ul class="submenu" >
                                 <li>
                                     <a href="#">
-                                        <span>Classic</span>
+                                        <span>All CupCakes</span>
                                     </a>
                                 </li>
                                 <li>
@@ -54,7 +56,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <span>all CupCakes</span>
+                                        <span>Classic</span>
                                     </a>
                                 </li>
                             </ul>
@@ -66,23 +68,114 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="nav-right">
+                    <span id="sign-in" class="sign-in-box">
+                        <a href="#">Sign in</a>
+                    </span>
+                    <span id="bag-icon" class="bag-icon">
+                        <a href="#">
+                            <i class="fas fa-shopping-bag"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>     
+        </div>
+    </div>
+
+    <div id="content">
+        <asp:ContentPlaceHolder id="Home" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder id="New" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder id="Cakes" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder id="Babka" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder id="CupCakes" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder id="CakeSupplies" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="footer" class="site-fotter">
+        <div class="site-fotter box-fotter-l">
+            <div class="box-fotter-l-top">
+                <h4>NEWSLETTER SIGN UP</h4>
+                <div>
+                    <form id="Fotterform" runat="server">
+                        <p>
+                            <asp:TextBox runat="server" id="Email" TextMode="Email" Text="Enter your Email" CssClass="em-text-style">
+
+                            </asp:TextBox>
+                            <asp:Button runat="server" Text="SIGN UP" CssClass="butt-style" />
+                        </p>
+                        <p>
+                            <asp:CheckBox runat="server" Text="Recives News About us ..." CssClass="check-style" />
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="box-fotter-l-bottom">
+                <h4> SOCIAL LINKs</h4>
+                <div id="social-icon" class="social-icon">
+                    <a>
+                        <span>
+                            <i class="fab fa-twitter" style="font-size:23px;"></i>
+                        </span>
+                    </a>
+                    <a>
+                        <span>
+                            <i class="fab fa-instagram" style="font-size:23px;"></i>
+                        </span>
+                    </a>
+                </div>
+                <p>Don't orget to follow us!</p>
+                </div>
+            </div>
+            <p class="copyright">
+                Copyright &copy; 2021 
+                <a href="Home.aspx">Cakepop</a>
+            </p>
+            
+        <div class="site-fotter box-fotter-r">
+            <div class="box-fotter-r-top">
+                <h4>WHOLESALE</h4>
+                <a href="#" class="visit-style">
+                    <span>VISIT OUR WHOLESALE <br />SITE</span>
+                </a>
+                <p>
+                    Are you intrested.....
+                </p>
+            </div>
+            <div class="box-fotter-r-bottom">
+                <h4>FOOTER MENU</h4>
+                <ul class="fotter-menu">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Journal</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Wholesale</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms of Service</a>
+                    </li>
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Custom Production</a>
+                    </li>
+                </ul>
             </div>
         </div>
-
-        <div id="content">
-            <asp:ContentPlaceHolder id="Home" runat="server">
-            </asp:ContentPlaceHolder>
-            <asp:ContentPlaceHolder id="New" runat="server">
-            </asp:ContentPlaceHolder>
-            <asp:ContentPlaceHolder id="Cakes" runat="server">
-            </asp:ContentPlaceHolder>
-            <asp:ContentPlaceHolder id="Babka" runat="server">
-            </asp:ContentPlaceHolder>
-            <asp:ContentPlaceHolder id="CupCakes" runat="server">
-            </asp:ContentPlaceHolder>
-            <asp:ContentPlaceHolder id="CakeSupplies" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-    </form>
+    </div>
 </body>
 </html>
