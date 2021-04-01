@@ -1,10 +1,10 @@
-﻿body {
+﻿html, body {
     position: absolute;
-    height: 2000px;
+    height: 4830px;
     width: 1265px;
     padding: 0px;
     margin: 0px;
-    background-color: brown;
+    background-color: aquamarine;
 }
 
 /*#form1 {
@@ -39,17 +39,14 @@ background-color: brown;
         z-index:999;
     }
 
-    h1 {
-        margin: 0px;
+    .site-header.classic #logo {
+        z-index: 9999;
+        position:absolute;
+        left: 60px;
+        top: 10px;
+        height: 50px;
+        width: 50px;
     }
-
-#logo {
-    position:absolute;
-    left: 60px;
-    top: 10px;
-    height: 50px;
-    width: 50px;
-}
 
     .site-header.header-scroll {
         position: absolute !important;
@@ -124,9 +121,10 @@ background-color: brown;
         position: absolute;
         opacity: 1;
         display: block;
-        width: 1225px;
+        width: 1275px;
         height: 60px;
         position: absolute;
+        padding: 0;
         margin: 70px 0 0 0;
         z-index: 9999;
         background-color: white;
@@ -173,12 +171,18 @@ background-color: brown;
         }
 
 
-#content {
-    top: 200px;
+.site-content {
+    position:absolute;
+    left: 0px;
+    width: 1265px;
+    margin-top: 70px;
+    height: auto;
 }
 
+.flag {
+    clear: both;
+}
 /*Fotter*/
-
 .site-fotter {
     position: absolute;
     z-index: 9;
@@ -188,6 +192,7 @@ background-color: brown;
     font-size: 14px;
     background-color: #5b6570;
     bottom: 0px;
+    left: 0px;
     padding: 0px;
     margin: 0px;
     color: #ffffff;
@@ -276,7 +281,7 @@ background-color: brown;
     .site-fotter .box-fotter-r {
         width: 632.5px;
         height: 920px;
-        right: 0;
+        left: 632.5px;
         bottom: 0;
     }
 

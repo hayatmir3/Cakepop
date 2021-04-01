@@ -7,7 +7,7 @@
     <title>Cake Pop</title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link type="text/css" rel="stylesheet" href="~/Assets/Css/StyleMaster.css" runat="server" />
+    <link type="text/css" rel="stylesheet" href="~/Assets/Css/StyleMaster.css?=@guid.newguid().tostring()" runat="server" />
     <script src="https://kit.fontawesome.com/55b95056a6.js" crossorigin="anonymous">
     </script>
 </head>
@@ -15,12 +15,12 @@
     <div id="header">
         <div class="site-header classic header-scroll">
 
-            <h1>
-                <a href="Home.aspx">
-                    <img alt="logo" src="/Assets/Img/Home/logo--01.svg" id="logo" />
-                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
-                </a>
-            </h1>
+
+            <a href="Home.aspx" id="logo">
+                <img alt="logo icon" src="/Assets/Img/Home/logo--01.svg" />
+            </a>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+
             <div class="site-nav-classic">
                 <nav>
                     <ul class="maincontainer">
@@ -82,7 +82,7 @@
         </div>
     </div>
 
-    <div id="content">
+    <div id="content" class="site-content">
         <asp:ContentPlaceHolder id="Home" runat="server">
         </asp:ContentPlaceHolder>
         <asp:ContentPlaceHolder id="New" runat="server">
@@ -95,6 +95,7 @@
         </asp:ContentPlaceHolder>
         <asp:ContentPlaceHolder id="CakeSupplies" runat="server">
         </asp:ContentPlaceHolder>
+        <div class="flag"></div>
     </div>
     <div id="footer" class="site-fotter">
         <div class="site-fotter box-fotter-l">
