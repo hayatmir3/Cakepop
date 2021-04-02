@@ -188,18 +188,36 @@ img {
         top: 0px;
         height: 720px;
         width: 632.5px;
-        background-image: url(../Img/Home/Another.jpg);
-        background-size: 632.5px 720px;
+        background-image: url("../Img/Home/cake.jpg");
+        background-size: 100%;
     }
 
     .cupcake-box {
-
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 360px;
+        width: 632.5px;
+        background-image: url("../Img/Home/cupcake.jpg");
+        background-size: 100%;
     }
 
     .babka-box {
-
+        position: absolute;
+        left: 632.5px;
+        bottom: 0px;
+        height: 360px;
+        width: 616.25px;
+        background-image: url("../Img/Home/babka.jpg");
+        background-size: 100%;
     }
 
     .supplies-box {
-
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 360px;
+        width: 616.25px;
+        background-image: url("../Img/Home/supplies.jpg");
+        background-size: 100%;
     }
