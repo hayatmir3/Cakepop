@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <link href="Assets/Css/Stylehome.css?=@guid.newguid().tostring()" rel="stylesheet" type="text/css"/>
+    <link href="Assets/Css/Stylehome.css" rel="stylesheet" type="text/css"/>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Home" Runat="Server">
     <section id="slideshow-box" class="homebody">
@@ -102,16 +102,44 @@
         <!-- home boxes -->
         <div id="home-boxes" class="home-boxes">
             <div id="cake-box" class="cake-box">
-
+                <div class="shadow">
+                    <div class="into-cake">
+                        <div class="into">
+                            <p class="linebox"></p>
+                            <p><a href="Cakes.aspx">Cake</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="cupcake-box" class="cupcake-box">
-
+                <div class="shadow2">
+                    <div class="into-cupcake">
+                        <div class="into">
+                            <p class="linebox"></p>
+                            <p><a href="CupCakes.aspx">CupCake</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="babka-box" class="babka-box">
-
+                <div class="shadow3">
+                    <div class="into-babka">
+                        <div class="into">
+                            <p class="linebox"></p>
+                            <p><a href="Babka.aspx">Babka</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="supplies-box" class="supplies-box">
-
+                <div class="shadow4">
+                    <div class="into-supplies">
+                        <div class="into">
+                            <p class="linebox"></p>
+                            <p> <a href="CakeSupplies.aspx">Cake <br /> supplies</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

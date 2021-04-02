@@ -180,10 +180,55 @@ img {
     top: 540px;
     left: 0px;
     width: 1265px;
-    height: 1040px;
+    height: 720px;
 }
+
+    .shadow {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 720px;
+        width: 632.5px;
+        background-color: rgba(0,0,0,0);
+        pointer-events: none;
+        z-index: 9;
+    }
+
+    .shadow2 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 360px;
+        width: 632.5px;
+        background-color: rgba(0,0,0,0);
+        pointer-events: none;
+        z-index: 9;
+    }
+
+    .shadow3 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 360px;
+        width: 316.25px;
+        background-color: rgba(0,0,0,0);
+        pointer-events: none;
+        z-index: 9;
+    }
+
+    .shadow4 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 360px;
+        width: 316.25px;
+        background-color: rgba(0,0,0,0);
+        pointer-events: none;
+        z-index: 9;
+    }
+
     .cake-box {
-        position:absolute;
+        position: absolute;
         left: 0px;
         top: 0px;
         height: 720px;
@@ -192,9 +237,17 @@ img {
         background-size: 100%;
     }
 
+    .into-cake {
+        position: absolute;
+        top: 180px;
+        left: 200px;
+        height: 250px;
+        width: 200px;
+    }
+
     .cupcake-box {
         position: absolute;
-        left: 0px;
+        right: 0px;
         top: 0px;
         height: 360px;
         width: 632.5px;
@@ -202,22 +255,126 @@ img {
         background-size: 100%;
     }
 
+    .into-cupcake {
+        position: absolute;
+        top: 40px;
+        left: 200px;
+        height: 250px;
+        width: 200px;
+        z-index: 99;
+    }
+
     .babka-box {
         position: absolute;
         left: 632.5px;
         bottom: 0px;
         height: 360px;
-        width: 616.25px;
+        width: 316.25px;
         background-image: url("../Img/Home/babka.jpg");
         background-size: 100%;
+    }
+
+    .into-babka {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        height: 250px;
+        width: 200px;
+        z-index: 99;
     }
 
     .supplies-box {
         position: absolute;
         right: 0px;
-        top: 0px;
+        bottom: 0px;
         height: 360px;
-        width: 616.25px;
+        width: 316.25px;
         background-image: url("../Img/Home/supplies.jpg");
         background-size: 100%;
+        text-align: center;
+        line-height: 70px;
+    }
+
+    .into-supplies {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        height: 270px;
+        width: 200px;
+    }
+     
+    .into-supplies p {
+        font-size: 72px;
+    }
+
+    .into {
+        font-family: 'Gill Sans MT', sans-serif;
+        font-size: 80px;
+        font-weight: bold;
+        color: #fff;
+        z-index: 9;
+    }
+
+    .into a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .linebox {
+        position: absolute;
+        bottom: -80px;
+        height: 10px;
+        width: 150px;
+        background-color: #fff;
+    }
+
+    .into:hover .linebox {
+        background-color: #1055b5;
+        float: left;
+        width: 200px;
+        height: 15px;
+    }
+
+    .into:hover p a {
+        color: #1055b5;
+    }
+
+    .shadow:hover {
+        background-color: rgba(0,0,0,.4);
+    }
+
+    .shadow2:hover {
+        background-color: rgba(0,0,0,.4);
+    }
+
+    .shadow3:hover {
+        background-color: rgba(0,0,0,.4);
+    }
+
+    .shadow4:hover {
+        background-color: rgba(0,0,0,.4);
+    }
+
+    .shadow > .into-cake {
+        display: inline-block;
+        pointer-events: auto;
+        z-index: 99;
+    }
+
+    .shadow2 > .into-cupcake {
+        display: inline-block;
+        pointer-events: auto;
+        z-index: 99;
+    }
+
+    .shadow3 > .into-babka {
+        display: inline-block;
+        pointer-events: auto;
+        z-index: 99;
+    }
+
+    .shadow4 > .into-supplies {
+        display: inline-block;
+        pointer-events: auto;
+        z-index: 99;
     }
