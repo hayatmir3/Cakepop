@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <link href="Assets/Css/Stylehome.css" rel="stylesheet" type="text/css"/>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="Home" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="Glob" Runat="Server">
     <section id="slideshow-box" class="homebody">
         <!-- home boxes -->
         <div class="slideshow-container">
