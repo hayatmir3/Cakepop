@@ -54,7 +54,7 @@ public partial class Payment : System.Web.UI.Page
         {
             cmd.Parameters.AddWithValue("@pname", dr["product_name"]);
             cmd.Parameters.AddWithValue("@cusid", Session["Username"].ToString());
-            cmd.Parameters.AddWithValue("@qnt", dr["product_qnt"]);
+            SqlParameter sqlParameter = cmd.Parameters.AddWithValue("@qnt", dr["product_qnt"]);
             cmd.Parameters.AddWithValue("@pprice", dr["Product_price"]);
             cmd.Parameters.AddWithValue("@pid", dr["Product_id"]);
             cmd.Parameters.AddWithValue("@orderdate", DateTime.Now.ToString());

@@ -90,7 +90,7 @@
             background-color: #808080;
         }
     </style>
-    <section>
+    <section style="height:1000px; position:relative; top: 85px; left:0px; width: 1265px;">
         <div>
         <asp:DataList ID="DataList2" runat="server" CssClass="descriptionprod" DataSourceID="SqlDataSource1" DataKeyField="Product_id">
             <ItemTemplate>
@@ -107,7 +107,7 @@
                                 <p Class="titlecat">
                                     <asp:Label ID="Product_catLabel" runat="server" Text='<%# Eval("Product_cat") %>' CssClass="titlecat"/>
                                     <br />
-                                    <asp:Label ID="Product_priceLabel" runat="server" Text='<%# Eval("Product_price") + "$" %>' CssClass="titlecat"/>
+                                    <asp:Label ID="Product_priceLabel" runat="server" Text='<%# Eval("Product_price") %>' CssClass="titlecat"/>
                                 </p>
                                 <p class="linefir"></p>
                                 <p Class="productdes">
@@ -129,5 +129,8 @@
         <asp:TextBox ID="gettheqnt" runat="server" CssClass="textboxasp" placeholder="qnt"></asp:TextBox>
         <asp:Button runat="server" ID="tocart" Text="Add to cart" onclick="tocart_Click" CssClass="buttfir"/>
         </div>
+    </section>
+    <section style="position:relative; left:0px; width: 1265px;">
+
     </section>
 </asp:Content>

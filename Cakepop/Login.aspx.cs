@@ -32,7 +32,7 @@ public partial class Login : System.Web.UI.Page
             table = checkrole.GetString(2); //index 2 for the role column
             if (table == "Admin")
             {
-                Response.Redirect("/Admin_dashboard.aspx");
+                Response.Redirect("/admindash.aspx");
             }
             else if (table == "Customer")
             {

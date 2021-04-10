@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
   <siteMapNode url="Home.aspx" title="Home"  description="Home page">
-    <siteMapNode url="New.aspx" title="New"  description="New page" />
-    <siteMapNode url="Cakes.aspx" title="Cakes"  description="Cakes page" />
-    <siteMapNode url="Babka.aspx" title="Babka"  description="Babka page" />
-    <siteMapNode url="CupCakes.aspx" title="CupCakes"  description="CupCakes page" />
-    <siteMapNode url="CakeSupplies.aspx" title="CakeSupplies"  description="CakeSupplies page" />
+    <siteMapNode url="product.aspx?cate=New" title="New"  description="New page" />
+    <siteMapNode url="product.aspx?cate=cake" title="Cakes"  description="Cakes page" />
+    <siteMapNode url="product.aspx?cate=Babka" title="Babka"  description="Babka page" />
+    <siteMapNode url="product.aspx?cate=CupCakes" title="CupCakes"  description="CupCakes page" />
+    <siteMapNode url="product.aspx?cate=CakeSupplies" title="CakeSupplies"  description="CakeSupplies page" />
   </siteMapNode>
 </siteMap>

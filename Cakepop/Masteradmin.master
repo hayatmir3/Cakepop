@@ -8,12 +8,28 @@
     <link href="Assets/Css/Adminstyle.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style>
+        .buttsign {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 100px;
+            height: 35px;
+            text-align: center;
+            color: #fff;
+            background-color: #5b6570;
+            font-family: 'Gill Sans MT', sans-serif;
+            font-size: 20px;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div id="main">
             <div id="header">
                 <a href="#" class="logo"><img src="Assets/Img/Home/logo--01.svg" width="50" height="50" alt="" /></a>
+                <asp:Button Text="sign out" runat="server" ID="adminsignout" CssClass="buttsign" OnClick="adminsignout_Click" />
                 <div id="nav">
                     <ul id="top-navigation">
                         <li class="turn active"><span><a href="Admindash.aspx">Home</a></span></li>

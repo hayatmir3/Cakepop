@@ -25,11 +25,11 @@
         }
         </style>
         <div>
-            <p>
-                <asp:DropDownList runat="server" ID="sorting" AutoPostBack="true" OnSelectedIndexChanged="Page_Load">
-                    <asp:ListItem text="def" Value="1"></asp:ListItem>
-                    <asp:ListItem text="to haigh" Value="2"></asp:ListItem>
-                    <asp:ListItem text="to low" Value="3"></asp:ListItem>
+            <p style="margin-top: 40px; margin-left: 40px;">
+                <asp:DropDownList runat="server" ID="sorting" AutoPostBack="true" OnSelectedIndexChanged="Page_Load" Height="45px" Width="180" Font-Size="15px">
+                    <asp:ListItem text="sorting" Value="1"></asp:ListItem>
+                    <asp:ListItem text="low to haigh" Value="2"></asp:ListItem>
+                    <asp:ListItem text="high to low" Value="3"></asp:ListItem>
                 </asp:DropDownList>
             </p>
         </div>

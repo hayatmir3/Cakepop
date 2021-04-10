@@ -40,6 +40,6 @@ public partial class MasterPage : System.Web.UI.MasterPage
 
     protected void usericon_Click(object sender, EventArgs e)
     {
-        Response.Redirect("profile.aspx");
+        Response.Redirect("cuprofile.aspx");
     }
 }

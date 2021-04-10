@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <link href="Assets/Css/Stylehome.css") rel="stylesheet" type="text/css"/>
+    <link href="Assets/Css/homesheet.css") rel="stylesheet" type="text/css"/>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="glob" Runat="Server">
     <section id="slideshow-box" class="homebody">
@@ -116,7 +116,7 @@
                     <div class="into-cupcake">
                         <div class="into">
                             <p class="linebox"></p>
-                            <p><a href="product.aspx?cate=Cupcake">CupCake</a></p>
+                            <p><a href="product.aspx?cate=cupcake">CupCake</a></p>
                         </div>
                     </div>
                 </div>

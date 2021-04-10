@@ -17,13 +17,13 @@
         <div id="centercolumn" runat="server">
             <table class="tableadd">
                 <tr>
-                    <td colspan="2"><asp:TextBox runat="server" ID="name" Text="Product name" CssClass="textboxasp"></asp:TextBox></td>
+                    <td colspan="2"><asp:TextBox runat="server" ID="name" placeholder="Product name" CssClass="textboxasp"></asp:TextBox></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><asp:TextBox runat="server" ID="des" TextMode="MultiLine" Text="Product descrption" CssClass="textboxasp"></asp:TextBox></td>
+                    <td colspan="2"><asp:TextBox runat="server" ID="des" TextMode="MultiLine" placeholder="Product descrption" CssClass="textboxasp"></asp:TextBox></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><asp:TextBox runat="server" ID="price" Text="Product price" CssClass="textboxasp"></asp:TextBox></td>
+                    <td colspan="2"><asp:TextBox runat="server" ID="price" placeholder="Product price" CssClass="textboxasp"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td style="width:220px;"><p class="textfir">Product category:</p></td>

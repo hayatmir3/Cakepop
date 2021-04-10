@@ -18,32 +18,40 @@ public partial class Proddes : System.Web.UI.Page
 
     protected void tocart_Click(object sender, EventArgs e)
     {
-        string Name = string.Empty;
-        decimal priceq = 0;
-        decimal qnt = Convert.ToDecimal(gettheqnt.Text);
-        foreach (DataListItem item in DataList2.Items)
+        if (Session["Username"] != null)
         {
-            Label namelb = item.FindControl("Prodcutname") as Label;
-            Name = namelb.Text;
-            Label price = item.FindControl("Product_priceLabel") as Label;
-            priceq = (qnt * Convert.ToDecimal(price.Text));
-        }
+            string Name = string.Empty;
+            decimal priceq = 0;
+            decimal qnt = Convert.ToDecimal(gettheqnt.Text);
+            foreach (DataListItem item in DataList2.Items)
+            {
+                Label namelb = item.FindControl("Product_nameLabel") as Label;
+                Name = namelb.Text;
+                Label price = item.FindControl("Product_priceLabel") as Label;
+                priceq = (qnt * Convert.ToDecimal(price.Text));
+            }
 
-        SqlConnection con = new SqlConnection();
-        con.ConnectionString = ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString.ToString();
-        con.Open();
-        SqlCommand cmd = new SqlCommand();
-        cmd.CommandText = "Insert into [Cart](Product_name,Product_price,Product_qnt,Product_id,Customer_id)values(@product_name,@product_price,@product_qnt,@product_id,@Customer_id)";
-        cmd.Connection = con;
-        cmd.Parameters.AddWithValue("@product_name", Name);
-        cmd.Parameters.AddWithValue("@product_qnt", qnt);
-        cmd.Parameters.AddWithValue("@product_price", priceq);
-        cmd.Parameters.AddWithValue("@Customer_id", Session["Username"].ToString());
-        cmd.Parameters.AddWithValue("@product_id", Request.QueryString["id"]);
-        int Result = cmd.ExecuteNonQuery();
-        if (Result>0)
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString.ToString();
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "Insert into [Cart](Product_name,Product_price,Prodcut_qnt,Product_id,Customer_id)values(@product_name,@product_price,@product_qnt,@product_id,@Customer_id)";
+            cmd.Connection = con;
+            cmd.Parameters.AddWithValue("@product_name", Name);
+            cmd.Parameters.AddWithValue("@product_qnt", qnt);
+            cmd.Parameters.AddWithValue("@product_price", priceq);
+            cmd.Parameters.AddWithValue("@Customer_id", Session["Username"].ToString());
+            cmd.Parameters.AddWithValue("@product_id", Request.QueryString["id"]);
+            int Result = cmd.ExecuteNonQuery();
+            if (Result>0)
+            {
+                Response.Redirect(Request.RawUrl);
+            }
+
+        }
+        else
         {
-            Response.Redirect(Request.RawUrl);
+            Response.Redirect("login.aspx");
         }
     }
 }

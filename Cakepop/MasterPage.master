@@ -7,7 +7,7 @@
     <title>Cake Pop</title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link type="text/css" rel="stylesheet" href="~/Assets/Css/StyleMaster.css" runat="server" />
+    <link type="text/css" rel="stylesheet" href="~/Assets/Css/mastersheet.css" runat="server" />
     <script src="https://kit.fontawesome.com/55b95056a6.js" crossorigin="anonymous">
     </script>
     <style>
@@ -20,15 +20,15 @@
     <form id="form" runat="server">
         <div id="header">
             <div class="site-header">
-
-
-                <a href="Home.aspx" id="logo">
-                    <img alt="logo icon" src="/Assets/Img/Home/logo--01.svg" />
-                </a>
                 <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
 
                 <div>
                     <nav id="site-nav-classic"class="site-nav-classic">
+                        <p style="top:0px; margin:0; padding:0;">
+                            <a href="Home.aspx" id="logo">
+                                <img alt="logo icon" src="/Assets/Img/Home/logo--01.svg" />
+                            </a>
+                        </p>
                         <ul class="maincontainer">
                             <li>
                                 <a href="New.aspx">
@@ -73,18 +73,18 @@
                                 </a>
                             </li>
                         </ul>
+                        <div class="nav-right">
+                            <asp:Button runat="server" ID="signin" CssClass="sign-in-box" Text="Sign in" OnClick="signin_Click" />
+                            <asp:Button runat="server" ID="signout" CssClass="sign-out-box" Text="Sign out" Visible="false" OnClick="signout_Click" />
+                            <asp:linkbutton runat="server" ID="bagicon" CssClass="bagicon" OnClick="bagicon_Click">
+                                <i class="fas fa-shopping-bag" style="color: #5b6570; font-size: 30px;"></i>
+                            </asp:linkbutton>
+                            <asp:linkbutton runat="server" ID="usericon" CssClass="usericon" Visible="false" OnClick="usericon_Click">
+                                <i class="far fa-user-circle" style="color: #5b6570; font-size: 30px;"></i>
+                            </asp:linkbutton>
+                            <asp:Label ID="userlbl" runat="server" CssClass="welecome" Visible="false" ></asp:Label>
+                        </div>
                     </nav>
-                    <div class="nav-right">
-                        <asp:Button runat="server" ID="signin" CssClass="sign-in-box" Text="Sign in" OnClick="signin_Click" />
-                        <asp:Button runat="server" ID="signout" CssClass="sign-out-box" Text="Sign out" Visible="false" OnClick="signout_Click" />
-                        <asp:linkbutton runat="server" ID="bagicon" CssClass="bagicon" OnClick="bagicon_Click">
-                            <i class="fas fa-shopping-bag" style="color: #5b6570; font-size: 30px;"></i>
-                        </asp:linkbutton>
-                        <asp:linkbutton runat="server" ID="usericon" CssClass="usericon" Visible="false" OnClick="usericon_Click">
-                            <i class="far fa-user-circle" style="color: #5b6570; font-size: 30px;"></i>
-                        </asp:linkbutton>
-                        <asp:Label ID="userlbl" runat="server" CssClass="welecome" Visible="false" ></asp:Label>
-                    </div>
                 </div>     
             </div>
             <!--  -->
@@ -95,7 +95,7 @@
                     if (prevScrollpos > currentScrollPos) {
                         document.getElementById("site-nav-classic").style.top = "0";
                     } else {
-                        document.getElementById("site-nav-classic").style.top = "-90px";
+                        document.getElementById("site-nav-classic").style.top = "-100px";
                     }
                     prevScrollpos = currentScrollPos;
                 }

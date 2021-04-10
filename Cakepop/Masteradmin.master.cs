@@ -11,4 +11,11 @@ public partial class Masteradmin : System.Web.UI.MasterPage
     {
 
     }
+
+    protected void adminsignout_Click(object sender, EventArgs e)
+    {
+        Session.RemoveAll();
+        Session.Abandon();
+        Response.Redirect("Home.aspx");
+    }
 }
