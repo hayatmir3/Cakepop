@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>CMS Admin</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<link media="all" type="text/css" href="/css/StyleSheet.css" rel="stylesheet" />
+
+</head>
+<body>
+<div id="main">
+    <div id="header">
+        <a href="#" class="logo"><img src="img/logo.gif" width="101" height="29" alt="" /></a>
+        <div id="nav">
+            <ul id="top-navigation">
+                <li class="turn active"><span><a href="#">Home</a></span></li>
+                <li class="turn"><span><a href="#">Users</a></span></li>
+                <li class="turn"><span><a href="#">Orders</a></span></li>
+                <li class="turn"><span><a href="#">Settings</a></span></li>
+                <li class="turn"><span><a href="#">Statistics</a></span></li>
+                <li class="turn"><span><a href="#">Design</a></span></li>
+                <li class="turn"><span><a href="#">Contents</a></span></li>
+            </ul>
+        </div>
+        <script>
+            // to active the current tab (highlight it) ^_^ //
+            var header = document.getElementById("top-navigation");
+            var btns = header.getElementsByClassName("turn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function() {
+              var current = document.getElementsByClassName("active");
+              current[0].className = current[0].className.replace(" active", "");
+              this.className += " active";
+              });
+            }
+        </script>
+        <ul id="top-navigation-left">
+            <li><span>Hello Admin!</span></li>
+        </ul>
+    </div>
+  <div id="middle">
+    <div id="left-column">
+      <h3>Header</h3>
+      <ul class="nav">
+        <li><a href="#">Lorem Ipsum dollar</a></li>
+        <li class="last"><a href="#">Dollar Lorem Ipsum</a></li>
+      </ul>
+      <div class="=link"><p>hello</p><p><a href="#">hello</a></p><p>hello</p></div>
+    </div>
+    <div id="center-column">
+      
+    </div>
+    <div id="right-column"> <strong class="h">Imp!!</strong>
+      <div class="box">We will have an evaluation soon!! never give your login information to anyone. Note!!! there will be a website update soon </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+</div>
+</body>
+</html>

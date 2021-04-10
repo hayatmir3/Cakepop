@@ -32,4 +32,14 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         Response.Redirect("Login.aspx");
     }
+
+    protected void bagicon_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("cart.aspx");
+    }
+
+    protected void usericon_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("profile.aspx");
+    }
 }

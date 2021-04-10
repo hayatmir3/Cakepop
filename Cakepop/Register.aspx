@@ -101,13 +101,23 @@
 
                         <p>
                             <asp:TextBox runat="server" ID="crusername" CssClass="textboxasp" placeholder="Username"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" 
+                                runat="server" controltovalidate ="crusername"
+                                ErrorMessage="please write your Username" Display="Dynamic">
+                            </asp:RequiredFieldValidator>
                         </p>
                         <p>
                             <asp:TextBox runat="server" ID="Cremail" CssClass="textboxasp" placeholder="Email"></asp:TextBox>
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" 
+                            runat="server" ErrorMessage="Enter valid email"
+                            controltovalidate="Cremail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                         </p>
                         <p>
                             <asp:TextBox runat="server" ID="password" CssClass="textboxasp_small" placeholder="Passwor" TextMode="Password"></asp:TextBox>
                             <asp:TextBox runat="server" ID="conpassword" CssClass="textboxasp_small" placeholder="Passwor" TextMode="Password"></asp:TextBox>
+                            <asp:CompareValidator ID="CompareValidator1" runat="server" 
+                              ErrorMessage="password doesn't match"  ControlToCompare="password"
+                               ControlToValidate="conpassword"></asp:CompareValidator>
                         </p>
                         <asp:Button ID="placeorder"  runat="server" Text="CREATE" CssClass="buttfir" OnClick="placeorder_Click"/>
                     </div>

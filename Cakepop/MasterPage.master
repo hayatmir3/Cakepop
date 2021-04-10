@@ -77,10 +77,10 @@
                     <div class="nav-right">
                         <asp:Button runat="server" ID="signin" CssClass="sign-in-box" Text="Sign in" OnClick="signin_Click" />
                         <asp:Button runat="server" ID="signout" CssClass="sign-out-box" Text="Sign out" Visible="false" OnClick="signout_Click" />
-                        <asp:linkbutton runat="server" ID="bagicon" CssClass="bagicon">
+                        <asp:linkbutton runat="server" ID="bagicon" CssClass="bagicon" OnClick="bagicon_Click">
                             <i class="fas fa-shopping-bag" style="color: #5b6570; font-size: 30px;"></i>
                         </asp:linkbutton>
-                        <asp:linkbutton runat="server" ID="usericon" CssClass="usericon" Visible="false">
+                        <asp:linkbutton runat="server" ID="usericon" CssClass="usericon" Visible="false" OnClick="usericon_Click">
                             <i class="far fa-user-circle" style="color: #5b6570; font-size: 30px;"></i>
                         </asp:linkbutton>
                         <asp:Label ID="userlbl" runat="server" CssClass="welecome" Visible="false" ></asp:Label>

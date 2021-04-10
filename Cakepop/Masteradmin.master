@@ -4,17 +4,44 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>Admin dashboard</title>
+    <link href="Assets/Css/Adminstyle.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <div id="main">
+            <div id="header">
+                <a href="#" class="logo"><img src="Assets/Img/Home/logo--01.svg" width="50" height="50" alt="" /></a>
+                <div id="nav">
+                    <ul id="top-navigation">
+                        <li class="turn active"><span><a href="Admindash.aspx">Home</a></span></li>
+                        <li class="turn"><span><a href="addprod.aspx">Product</a></span></li>
+                        <li class="turn"><span><a href="#">Orders</a></span></li>
+                        <li class="turn"><span><a href="#">Customers</a></span></li>
+                    </ul>
+                </div>
+                <script>
+                    // to active the current tab (highlight it) ^_^ //
+                    var header = document.getElementById("top-navigation");
+                    var btns = header.getElementsByClassName("turn");
+                    for (var i = 0; i < btns.length; i++) {
+                        btns[i].addEventListener("click", function () {
+                            var current = document.getElementsByClassName("active");
+                            current[0].className = current[0].className.replace(" active", "");
+                            this.className += " active";
+                        });
+                    }
+                </script>
+                <ul id="top-navigation-left">
+                    <li><span>Hello Admin!</span></li>
+                </ul>
+            </div>
+                <div id="middle">
+                <asp:ContentPlaceHolder runat="server" ID="Admin"></asp:ContentPlaceHolder>
+            </div>
+        </div>
     </form>
 </body>
 </html>

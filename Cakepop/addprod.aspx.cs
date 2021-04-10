@@ -82,4 +82,16 @@ public partial class addprod : System.Web.UI.Page
         con.Close();
 
     }
+
+    protected void followproduct_Click(object sender, EventArgs e)
+    {
+        followup.Visible = true;
+        centercolumn.Visible = false;
+    }
+
+    protected void Addnewproduct_Click(object sender, EventArgs e)
+    {
+        centercolumn.Visible = true;
+        followup.Visible = false;
+    }
 }
