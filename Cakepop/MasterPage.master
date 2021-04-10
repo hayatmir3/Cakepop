@@ -7,7 +7,7 @@
     <title>Cake Pop</title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link type="text/css" rel="stylesheet" href="~/Assets/Css/StyleMaster.css?=@guid.newguid().tostring()" runat="server" />
+    <link type="text/css" rel="stylesheet" href="~/Assets/Css/StyleMaster.css" runat="server" />
     <script src="https://kit.fontawesome.com/55b95056a6.js" crossorigin="anonymous">
     </script>
     <style>
@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-    <form id="Fotterform" runat="server">
+    <form id="form" runat="server">
         <div id="header">
             <div class="site-header classic header-scroll">
 
@@ -87,27 +87,24 @@
                 </div>     
             </div>
         </div>
-
         <div id="content" class="site-content">
             <asp:ContentPlaceHolder ID="Glob" runat="server">
             </asp:ContentPlaceHolder>
             <div class="flag"></div>
         </div>
         <div id="footer" class="site-fotter">
-            <div class="site-fotter box-fotter-l">
+            <div class="box-fotter-l">
                 <div class="box-fotter-l-top">
                     <h4>NEWSLETTER SIGN UP</h4>
-                    <div>
-                    
-                            <p>
-                                <asp:TextBox runat="server" id="Email" TextMode="Email" Text="Enter your Email" CssClass="em-text-style">
+                    <div>                  
+                        <p>
+                            <input id="Email" type="text" placeholder="Enter your Email" Class="em-text-style"/>
 
-                                </asp:TextBox>
-                                <asp:Button runat="server" Text="SIGN UP" CssClass="butt-style" />
-                            </p>
-                            <p>
-                                <asp:CheckBox runat="server" Text="Recives News About us ..." CssClass="check-style" />
-                            </p>
+                            <asp:Button runat="server" text="SIGN UP" CssClass="butt-style" />
+                        </p>
+                        <p>
+                            <asp:CheckBox runat="server" Text="Recives News About us ..." CssClass="check-style" />
+                        </p>
                     </div>
                 </div>
                 <div class="box-fotter-l-bottom">
@@ -126,13 +123,13 @@
                     </div>
                     <p>Don't orget to follow us!</p>
                     </div>
-                </div>
                 <p class="copyright">
-                    Copyright &copy; 2021 
-                    <a href="Home.aspx">Cakepop</a>
+                Copyright &copy; 2021 
+                <a href="Home.aspx">Cakepop</a>
                 </p>
+            </div>
             
-            <div class="site-fotter box-fotter-r">
+            <div class="box-fotter-r">
                 <div class="box-fotter-r-top">
                     <h4>WHOLESALE</h4>
                     <a href="#" class="visit-style">

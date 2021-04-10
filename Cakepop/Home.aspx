@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <link href="Assets/Css/Stylehome.css" rel="stylesheet" type="text/css"/>
+    <link href="Assets/Css/Stylehome.css") rel="stylesheet" type="text/css"/>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="Glob" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="glob" Runat="Server">
     <section id="slideshow-box" class="homebody">
         <!-- home boxes -->
         <div class="slideshow-container">

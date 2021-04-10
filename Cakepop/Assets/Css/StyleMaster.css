@@ -1,10 +1,11 @@
-﻿html, body {
+﻿html, body, form {
     position: absolute;
-    height: 4830px;
+    background-color: darkred;
     width: 1265px;
-    padding: 0px;
-    margin: 0px;
-    background-color: aquamarine;
+    height: 3000px;
+    top:0;
+    margin:0;
+    padding:0;
 }
 
 /*#form1 {
@@ -30,8 +31,9 @@ background-color: brown;
     top: 0px;
     left: 0px;
     align-items: center;
-    width: 1265px;
-    height: 70px;
+    width: 1285px;
+    height: 80px;
+    border-bottom: solid 2px gray;
     background-color: white;
     font-size: 15px;
 }
@@ -172,29 +174,34 @@ background-color: brown;
 
 
 .site-content {
-    position:absolute;
+    position: absolute;
+    top:0;
     left: 0px;
     width: 1265px;
+    height: 3000px;
+    float: left;
     margin-top: 70px;
-    height: auto;
 }
 
-.flag {
-    clear: both;
-}
-/*Fotter*/
+/**
+*
+*Fotter
+*
+**/
 .site-fotter {
     position: absolute;
+    float: left;
     z-index: 9;
     width: 1265px;
     height: 920px;
     font-family: 'Gill Sans MT', sans-serif;
     font-size: 14px;
     background-color: #5b6570;
-    bottom: 0px;
+    bottom: 0;
     left: 0px;
     padding: 0px;
     margin: 0px;
+    right: 0px;
     color: #ffffff;
 }
     
@@ -203,10 +210,12 @@ background-color: brown;
         font-size: 15px;
         color: #edecf0;
     }
-    .site-fotter .box-fotter-l {
+    .box-fotter-l {
+        position:absolute;
         width: 632.5px;
         height: 920px;
-        left: 0;
+        left: 0px;
+        bottom: 0px;
     }
 
         .box-fotter-l-top {
@@ -265,12 +274,12 @@ background-color: brown;
             letter-spacing: 10px;
         }
 
-    .copyright {
-        position: absolute;
-        z-index: 9;
-        left: 100px;
-        bottom: 70px;
-    }
+        .copyright {
+            position: absolute;
+            z-index: 9;
+            left: 100px;
+            bottom: 70px;
+        }
 
         .copyright a {
             text-decoration: none;
@@ -278,11 +287,12 @@ background-color: brown;
             border-bottom: dashed 1px;
         }
 
-    .site-fotter .box-fotter-r {
+    .box-fotter-r {
+        position:absolute;
         width: 632.5px;
         height: 920px;
         left: 632.5px;
-        bottom: 0;
+        bottom: 0px;
     }
 
         .box-fotter-r-top {
@@ -324,6 +334,9 @@ background-color: brown;
             border-bottom: 1px dashed;
             color: #ffffff;
         }
+
+/*different pages*/
+
 
 
 

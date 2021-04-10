@@ -1,10 +1,10 @@
 ﻿.homebody {
-    position:absolute;
+    position: absolute;
     font-family: 'Gill Sans MT', sans-serif;
-    margin: 0 0 -920px 0;
     padding: 0;
     max-width: 1265px;
-    height: 3840px;
+    max-height: 3000px;
+    margin-top: 85px;
 }
 
 * {
@@ -233,8 +233,8 @@ img {
         top: 0px;
         height: 720px;
         width: 632.5px;
-        background-image: url("../Img/Home/cake.jpg");
         background-size: 100%;
+        background-image: url(../Img/Home/cake.jpg);
     }
 
     .into-cake {
