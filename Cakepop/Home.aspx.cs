@@ -11,4 +11,9 @@ public partial class Home : System.Web.UI.Page
     {
 
     }
+
+    protected void toblg_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("journal.aspx");
+    }
 }
