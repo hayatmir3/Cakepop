@@ -75,7 +75,7 @@
     <section style="height:1000px; position:relative; top: 85px; left:0px; width: 1265px;">
         <table style="width:1265px; height: 720px; position:absolute; top: 85px;">
             <tr>
-                <td class="tdfir">
+                <td class="tdfir" style="border-right: solid 1px #e7e7e7">
                     <p class="titlefir">Customer<br /> Login<br /><span class="linefir"></span></p>
                 </td>
                 <td class="tdfir">
@@ -85,6 +85,7 @@
                         <p><asp:TextBox runat="server" ID="txtPass" TextMode="Password" CssClass="textboxasp" placeholder="Password"></asp:TextBox></p>
 
                         <p><asp:Button runat="server" Text="Login" ID="logbutton" OnClick="logbutton_Click" CssClass="buttfir" /></p>
+                        <p style="color: darkgrey;">New Customer? <a href="Register.aspx" style="color:#5b6570; text-decoration-line: underline;">Sign Up</a></p>
 
                         <p><asp:label runat="server" ID="loginmsg"></asp:label> </p>
                     </div>

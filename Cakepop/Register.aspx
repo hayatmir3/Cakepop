@@ -89,7 +89,7 @@
     <section style="height:1000px; position:relative; top: 85px; left:0px; width: 1265px;">
         <table style="width:1265px; height: 720px; position:absolute; top: 85px;">
             <tr>
-                <td class="tdfir">
+                <td class="tdfir" style="border-right: solid 1px #e7e7e7">
                     <p class="titlefir">Create<br /> Account<br /><span class="linefir"></span></p>
                 </td>
                 <td class="tdfir">

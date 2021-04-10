@@ -11,28 +11,25 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         if (Session["Username"] != null)
         {
-           // loginb.Visible = false;
-           // logoutb.Visible = true;
-           // labusername.Text = "Welecome" + Session["Username"].ToString();
+            signin.Visible = false;
+            signout.Visible = true;
+            usericon.Visible = true;
+            userlbl.Text = "Hello!" + Session["Username"].ToString();
         }
 
 
     }
 
-    protected void logoutb_Click(object sender, EventArgs e)
+    protected void signout_Click(object sender, EventArgs e)
     {
         Session.RemoveAll();
         Session.Abandon();
-        Response.Redirect("main.aspx");
+        Response.Redirect("Home.aspx");
     }
 
-    protected void Unnamed1_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("product.aspx?cate=cupcake");
-    }
 
-    protected void Unnamed2_Click(object sender, EventArgs e)
+    protected void signin_Click(object sender, EventArgs e)
     {
-        Response.Redirect("product.aspx?cate=test");
+        Response.Redirect("Login.aspx");
     }
 }

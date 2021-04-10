@@ -19,7 +19,7 @@
 <body>
     <form id="form" runat="server">
         <div id="header">
-            <div class="site-header classic header-scroll">
+            <div class="site-header">
 
 
                 <a href="Home.aspx" id="logo">
@@ -27,8 +27,8 @@
                 </a>
                 <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
 
-                <div class="site-nav-classic">
-                    <nav>
+                <div>
+                    <nav id="site-nav-classic"class="site-nav-classic">
                         <ul class="maincontainer">
                             <li>
                                 <a href="New.aspx">
@@ -36,56 +36,70 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="Cakes.aspx">
+                                <a href="product.aspx?cate=Cake">
                                     <span>Cakes</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="Babka.aspx">
+                                <a href="product.aspx?cate=Babka">
                                     <span>Babka</span>
                                 </a>
                             </li>
                             <li class="has-submenu" aria-haspopup="true">
-                                <a href="CupCakes.aspx" class="drop">
+                                <a href="#" class="drop">
                                     <span>CupCakes</span>
                                 </a>
                                 <ul class="submenu" >
                                     <li>
-                                        <a href="#">
-                                            <span>All CupCakes</span>
+                                        <a href="product.aspx?cate=Cupcake">
+                                            <span>All</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="product.aspx?cate=cupcake?sub=Organic">
                                             <span>Organic</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="product.aspx?cate=cupcake?sub=Calssic">
                                             <span>Classic</span>
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="CakeSupplies.aspx">
+                                <a href="product.aspx?cate=CakeSupplies">
                                     <span>CakeSupplies</span>
                                 </a>
                             </li>
                         </ul>
                     </nav>
                     <div class="nav-right">
-                        <span id="sign-in" class="sign-in-box">
-                            <a href="#">Sign in</a>
-                        </span>
-                        <span id="bag-icon" class="bag-icon">
-                            <a href="#">
-                                <i class="fas fa-shopping-bag"></i>
-                            </a>
-                        </span>
+                        <asp:Button runat="server" ID="signin" CssClass="sign-in-box" Text="Sign in" OnClick="signin_Click" />
+                        <asp:Button runat="server" ID="signout" CssClass="sign-out-box" Text="Sign out" Visible="false" OnClick="signout_Click" />
+                        <asp:linkbutton runat="server" ID="bagicon" CssClass="bagicon">
+                            <i class="fas fa-shopping-bag" style="color: #5b6570; font-size: 30px;"></i>
+                        </asp:linkbutton>
+                        <asp:linkbutton runat="server" ID="usericon" CssClass="usericon" Visible="false">
+                            <i class="far fa-user-circle" style="color: #5b6570; font-size: 30px;"></i>
+                        </asp:linkbutton>
+                        <asp:Label ID="userlbl" runat="server" CssClass="welecome" Visible="false" ></asp:Label>
                     </div>
                 </div>     
             </div>
+            <!--  -->
+            <script>
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function () {
+                    var currentScrollPos = window.pageYOffset;
+                    if (prevScrollpos > currentScrollPos) {
+                        document.getElementById("site-nav-classic").style.top = "0";
+                    } else {
+                        document.getElementById("site-nav-classic").style.top = "-90px";
+                    }
+                    prevScrollpos = currentScrollPos;
+                }
+            </script>
         </div>
         <div id="content" class="site-content">
             <asp:ContentPlaceHolder ID="Glob" runat="server">
