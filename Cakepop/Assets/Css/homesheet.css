@@ -1,10 +1,10 @@
 ﻿.homebody {
-    position: absolute;
     font-family: 'Gill Sans MT', sans-serif;
-    padding: 0;
-    max-width: 1265px;
-    max-height: 2800px;
-    top: 35px;
+    padding: 0px;
+    float: left;
+    width: 1265px;
+    height: 2780px;
+    top: 80px;
 }
 
 * {

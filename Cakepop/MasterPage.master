@@ -7,12 +7,13 @@
     <title>Cake Pop</title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link type="text/css" rel="stylesheet" href="~/Assets/Css/mastersheet.css" runat="server" />
+    <link type="text/css" rel="stylesheet" href="~/Assets/Css/masterstyle.css" runat="server" />
     <script src="https://kit.fontawesome.com/55b95056a6.js" crossorigin="anonymous">
     </script>
     <style>
         html {
             overflow-x: hidden;
+            height: 100%;
         }
     </style>
 </head>
@@ -103,8 +104,9 @@
         </div>
         <div id="content" class="site-content">
             <asp:ContentPlaceHolder ID="Glob" runat="server">
+                
             </asp:ContentPlaceHolder>
-            <div class="flag"></div>
+            <div class="push"></div>
         </div>
         <div id="footer" class="site-fotter">
             <div class="box-fotter-l">

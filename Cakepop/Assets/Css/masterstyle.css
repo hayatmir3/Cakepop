@@ -1,37 +1,11 @@
-﻿html, body, form {
-    position: absolute;
+﻿body, html, form {
     background-color: #fff;
     width: 1265px;
-    height: 3000px;
-    top: 0;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
-/*#form1 {
-position: absolute;
-height: 2000px;
-width: 1265px;
-margin: 0px;
-padding: 0px;
-background-color: brown;
-}*/
-
-/*site-header {
-    font-family: 'Gill Sans MT','sans-serif';
-    display: block;
-    z-index: 999;
-    border-bottom: 2px solid #e7e7e7;
-    transition: top 0.3s;
-    position: fixed;
-    font-weight: bold;
-    top: 0px;
-    left: 0px;
-    width: 1285px;
-    height: 80px;
-    background-color: white;
-    font-size: 15px;
-}*/
 .site-nav-classic {
     position: fixed;
     z-index: 999;
@@ -202,14 +176,20 @@ li a:hover, .has-submenu:hover .drop {
     right: 260px
 }
 
-
-.site-content {
-    position: absolute;
-    top: 80px;
-    left: 0px;
+#content {
     width: 1265px;
-    height: 2800px;
+    padding: 80px 0px 10px 0px;
     float: left;
+    min-height: 100%;
+    margin-bottom: -920px;
+}
+
+* html #content {
+    height: 100%;
+}
+
+.push {
+    height: 930px;
 }
 
 /**
@@ -218,19 +198,15 @@ li a:hover, .has-submenu:hover .drop {
 *
 **/
 .site-fotter {
-    position: absolute;
     float: left;
-    display: block;
-    z-index: 9;
     width: 1265px;
     height: 920px;
     font-family: 'Gill Sans MT', sans-serif;
     font-size: 14px;
     background-color: #5b6570;
-    bottom: 0;
     left: 0px;
-    padding: 0px;
-    margin: 0px;
+    bottom: 0px;
+    padding: 10px 0px 10px 0px;
     color: #ffffff;
 }
 
@@ -241,15 +217,17 @@ li a:hover, .has-submenu:hover .drop {
     }
 
 .box-fotter-l {
-    position: absolute;
+    position: relative;
+    float: left;
     width: 632.5px;
     height: 920px;
-    left: 0px;
-    bottom: 0px;
+    background-color: #5b6570;
+    margin: 0px;
 }
 
 .box-fotter-l-top {
-    position: absolute;
+    z-index: 9;
+    position: relative;
     left: 100px;
     top: 150px;
 }
@@ -257,7 +235,7 @@ li a:hover, .has-submenu:hover .drop {
 .box-fotter-l-bottom {
     position: absolute;
     left: 100px;
-    top: 460px;
+    top: 490px;
 }
 
 .em-text-style {
@@ -308,7 +286,7 @@ li a:hover, .has-submenu:hover .drop {
     position: absolute;
     z-index: 9;
     left: 100px;
-    bottom: 70px;
+    bottom: 60px;
 }
 
     .copyright a {
@@ -318,10 +296,11 @@ li a:hover, .has-submenu:hover .drop {
     }
 
 .box-fotter-r {
-    position: absolute;
+    position: relative;
+    float: right;
+    background-color: #5b6570;
     width: 632.5px;
     height: 920px;
-    left: 632.5px;
     bottom: 0px;
 }
 
@@ -367,9 +346,3 @@ li a:hover, .has-submenu:hover .drop {
     }
 
 /*different pages*/
-
-
-
-
-
-
