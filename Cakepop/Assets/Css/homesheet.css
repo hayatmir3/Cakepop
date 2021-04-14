@@ -141,7 +141,7 @@ img {
 .threedot {
     position: absolute;
     right: 600px;
-    top: 510px;
+    top: 580px;
 }
 /* Fading animation */
 .fade {
@@ -177,7 +177,7 @@ img {
 
 .home-boxes {
     position: absolute;
-    top: 540px;
+    top: 620px;
     left: 0px;
     width: 1265px;
     height: 720px;
@@ -276,12 +276,16 @@ img {
 
 .into-babka {
     position: absolute;
-    top: 10px;
+    top: 48px;
     left: 50px;
-    height: 250px;
+    height: 210px;
     width: 200px;
     z-index: 99;
 }
+
+    .into-babka p {
+        font-size: 70px;
+    }
 
 .supplies-box {
     position: absolute;
@@ -299,12 +303,12 @@ img {
     position: absolute;
     top: 10px;
     left: 50px;
-    height: 270px;
+    height: 250px;
     width: 200px;
 }
 
     .into-supplies p {
-        font-size: 72px;
+        font-size: 64px;
     }
 
 .into {
@@ -383,7 +387,7 @@ img {
 
 .home-boxes-blog {
     position: absolute;
-    top: 1260px;
+    top: 1340px;
     left: 0px;
     width: 1265px;
     height: 720px;
@@ -393,7 +397,7 @@ img {
     position: absolute;
     left: 0px;
     top: 0px;
-    height: 720px;
+    height: 620px;
     width: 632.5px;
     background-size: 100%;
     background-image: url(../Img/Home/journal.jpg);
@@ -403,7 +407,7 @@ img {
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 720px;
+    height: 620px;
     width: 632.5px;
     background-color: rgba(0,0,0,0);
     pointer-events: none;
@@ -464,10 +468,28 @@ img {
     position: absolute;
     left: 632.5px;
     top: 0px;
+    height: 720px;
+    width: 632.5px;
     background-color: #fff;
+    background-size: 100%;
+}
+
+/*.blogimage {
     height: 720px;
     width: 632.5px;
     background-size: 100%;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+}*/
+
+.onhover-blog {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    height: 560px;
+    width: 612.5px;
+    border: dashed 1px #5b6570;
 }
 
 .tilte-sample {
@@ -510,10 +532,11 @@ img {
 }
 
 .toblogbt {
+    display: block;
     position: absolute;
     float: right;
-    left: 200px;
-    bottom: 200px;
+    left: 270px;
+    bottom: 60px;
     background-color: #5b6570;
     height: 45px;
     width: 120px;
@@ -521,10 +544,10 @@ img {
     font-size: 15px;
     color: #fff;
     font-weight: 600;
+    z-index: 99;
 }
 
     .toblogbt:hover {
-        float: right;
         background-color: #fff;
         color: #5b6570;
         box-sizing: border-box;

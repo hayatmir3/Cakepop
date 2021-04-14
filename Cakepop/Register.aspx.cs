@@ -30,14 +30,13 @@ public partial class Register : System.Web.UI.Page
         int Result = cmd.ExecuteNonQuery();
         if (Result > 0)
         {
-            Response.Redirect("/Home.aspx");
+            Response.Redirect("/Login.aspx");
         }
         else
         {
 
         }
         
-        //give it color... ( don't forget...)!!!
         con.Close();
     }
 }

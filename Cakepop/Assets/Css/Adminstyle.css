@@ -318,3 +318,11 @@ ul.nav {
     .buttons input {
         margin: 0 0 6px 0;
     }
+
+/*different pages*/
+
+.succlbl {
+    color: green;
+    font-family: 'Gill Sans MT',sans-serif;
+    font-size: 15px;
+}

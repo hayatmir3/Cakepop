@@ -153,12 +153,15 @@
                     </div>
                 </div>
                 <div id="blog-sample" class="blog-sample">
-                    <p class="tilte-sample">Apple Pie From Scratch</p>
-                    <p class="writer-sample">by shaden on Apr 4, 2021</p>
-                    <p class="linebetw"></p>
-                    <p class="content-sample">An apple pie is a pie in which the principal filling ingredient is apple, originated in England. It is often served with whipped cream, 
-                        ice cream, or cheddar cheese. It is generally double-crusted, with pastry both above and below the filling; the upper crust may be solid or latticed. So, let's start to make our Apple pie ...</p>
-                    <asp:Button runat="server" ID="toblg" Text="Read More" CssClass="toblogbt" OnClick="toblg_Click" />
+                    
+                    <div class="onhover-blog">
+                        <p class="tilte-sample">Apple Pie From Scratch</p>
+                        <p class="writer-sample">by shaden on Apr 4, 2021</p>
+                        <p class="linebetw"></p>
+                        <p class="content-sample">An apple pie is a pie in which the principal filling ingredient is apple, originated in England. It is often served with whipped cream, 
+                            ice cream, or cheddar cheese. It is generally double-crusted, with pastry both above and below the filling; the upper crust may be solid or latticed. So, let's start to make our Apple pie ...</p>
+                        <asp:Button runat="server" ID="toblg" Text="Read More" CssClass="toblogbt" OnClick="toblg_Click" />
+                    </div>
                 </div>
             </div>
         </div>

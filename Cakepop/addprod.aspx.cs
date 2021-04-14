@@ -76,9 +76,14 @@ public partial class addprod : System.Web.UI.Page
 
         cmd.Parameters.AddWithValue("@img", imagefile);
         cmd.Parameters.AddWithValue("@des", des.Text);
-        cmd.ExecuteNonQuery();
-        Addlbl.Text = "You have seccessfully added the product";
-        //give it color... ( don't forget...)!!!
+        int Result = cmd.ExecuteNonQuery();
+        if (Result > 0)
+        {
+            Response.Redirect(Request.RawUrl);
+            Addlbl.Text = "You have seccessfully added the product";
+            //give it color... ( don't forget...)!!!
+        }
+
         con.Close();
 
     }

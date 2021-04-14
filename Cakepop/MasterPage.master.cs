@@ -14,6 +14,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
             signin.Visible = false;
             signout.Visible = true;
             usericon.Visible = true;
+            userlbl.Visible = true;
             userlbl.Text = "Hello!" + Session["Username"].ToString();
         }
 

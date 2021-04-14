@@ -51,7 +51,7 @@
                     <td colspan="2" style="align-items: center;">
                         <asp:Button runat="server" ID="addbutt" Text="Upload" OnClick="addbutt_Click" CssClass="buttfir" />
                         <br />
-                        <asp:Label runat="server" ID="Addlbl"></asp:Label>
+                        <asp:Label runat="server" ID="Addlbl" CssClass="succlbl"></asp:Label>
                     </td>
                 </tr>
             </table>

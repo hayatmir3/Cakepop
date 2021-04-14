@@ -22,7 +22,8 @@
             font-weight: 600;
             text-align:left;
             position: absolute;
-            left: 200px;
+            top: 285px;
+            left: 150px;
             line-height: 50px;
         }
 
@@ -49,7 +50,7 @@
         }
 
         .tdfir {
-            width:605px;
+            width:815px;
             vertical-align: top;
         }
 
@@ -71,23 +72,39 @@
         .buttfir:hover {
             background-color: #808080;
         }
+
+        .gridplace {
+            position: absolute;
+            top: 100px;
+            right: 115px;
+        }
     </style>
-    <section style="height:1000px; position:relative; top: 85px; left:0px; width: 1265px;">
-        <table style="width:1265px; height: 720px; position:absolute; top: 85px;">
+    <section style="height:1000px; position:relative; top: 0px; left:0px; width: 1265px;">
+        <table style="width:1265px; height: 920px; position:absolute; top: 0px;">
             <tr>
-                <td class="tdfir" style="border-right: solid 1px #e7e7e7" >
+                <td style="border-right: solid 2px #e7e7e7; vertical-align: top; width: 450px" >
                     <p class="titlefir">Cart<br /> Shopping<br /><span class="linefir"></span></p>
                 </td>
                 <td class="tdfir">
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" DataKeyNames="Cart_id" Width="605px" Height="720px">
-                        <Columns>
-                            <asp:CommandField ShowDeleteButton="True" DeleteImageUrl="Assets/Img/Home/close.png" ButtonType="Image" />
-                            <asp:BoundField DataField="Product_id" HeaderText="Product_id" SortExpression="Product_id" />
-                            <asp:BoundField DataField="Product_name" HeaderText="Product_name" SortExpression="Product_name" />
-                            <asp:BoundField DataField="Prodcut_qnt" HeaderText="Prodcut_qnt" SortExpression="Prodcut_qnt" />
-                            <asp:BoundField DataField="Product_price" HeaderText="Product_price" SortExpression="Product_price" />
-                        </Columns>
-                    </asp:GridView>
+                    <div class="gridplace">
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" DataKeyNames="Cart_id" Width="645px" Height="620px" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" AllowPaging="True" PageSize="3">
+                            <Columns>
+                                <asp:CommandField ShowDeleteButton="True" DeleteImageUrl="Assets/Img/Home/close.png" ButtonType="Image" ItemStyle-Width="90px" ItemStyle-VerticalAlign="Middle" ItemStyle-HorizontalAlign="Center" />
+                                <asp:BoundField DataField="Product_name" HeaderText="Product" SortExpression="Product_name" />
+                                <asp:BoundField DataField="Prodcut_qnt" HeaderText="Quantity" SortExpression="Prodcut_qnt" />
+                                <asp:BoundField DataField="Product_price" HeaderText="price" SortExpression="Product_price" />
+                            </Columns>
+                            <FooterStyle BackColor="White" ForeColor="#333333" />
+                            <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
+                            <RowStyle BackColor="White" ForeColor="#333333" Width="80px" />
+                            <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                            <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                            <SortedAscendingHeaderStyle BackColor="#487575" />
+                            <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                            <SortedDescendingHeaderStyle BackColor="#275353" />
+                        </asp:GridView>
+                    </div>
                 </td>
             </tr>
         </table>
@@ -114,8 +131,8 @@
                 <asp:Parameter Name="Cart_id" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <div style="position:absolute; z-index: 99; top: 500px; right: 300px; font-family: 'Gill Sans MT', sans-serif;">
-            <p><asp:Label ID="amount" runat="server" Font-Size="15px" Font-Bold="true"></asp:Label></p>
+        <div style="position:absolute; z-index: 99; top: 640px; right: 120px; font-family: 'Gill Sans MT', sans-serif;">
+            <p><asp:Label ID="amount" runat="server" Font-Size="20px" Font-Bold="true" ForeColor="#ffffff"></asp:Label></p>
             <br />
             <p><asp:Button ID="toplaceorder" runat="server" Text="Procced to payment" OnClick="toplaceorder_Click" CssClass="buttfir" /></p>
         </div>

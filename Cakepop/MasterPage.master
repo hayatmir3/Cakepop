@@ -26,7 +26,7 @@
                 <div>
                     <nav id="site-nav-classic"class="site-nav-classic">
                         <p style="top:0px; margin:0; padding:0;">
-                            <a href="Home.aspx" id="logo">
+                            <a href="/Home.aspx" id="logo">
                                 <img alt="logo icon" src="/Assets/Img/Home/logo--01.svg" />
                             </a>
                         </p>
@@ -37,12 +37,12 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="product.aspx?cate=Cake">
+                                <a href="/product.aspx?cate=Cake">
                                     <span>Cakes</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="product.aspx?cate=Babka">
+                                <a href="/product.aspx?cate=Babka">
                                     <span>Babka</span>
                                 </a>
                             </li>
@@ -52,24 +52,24 @@
                                 </a>
                                 <ul class="submenu" >
                                     <li>
-                                        <a href="product.aspx?cate=Cupcake">
+                                        <a href="/product.aspx?cate=Cupcake">
                                             <span>All</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="product.aspx?cate=cupcake?sub=Organic">
+                                        <a href="/product.aspx?cate=cupcake?sub=Organic">
                                             <span>Organic</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="product.aspx?cate=cupcake?sub=Calssic">
+                                        <a href="/product.aspx?cate=cupcake?sub=Calssic">
                                             <span>Classic</span>
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="product.aspx?cate=CakeSupplies">
+                                <a href="/product.aspx?cate=CakeSupplies">
                                     <span>CakeSupplies</span>
                                 </a>
                             </li>
@@ -147,12 +147,13 @@
             
             <div class="box-fotter-r">
                 <div class="box-fotter-r-top">
-                    <h4>WHOLESALE</h4>
+                    <h4>CUSTOM CAKE</h4>
                     <a href="#" class="visit-style">
-                        <span>VISIT OUR WHOLESALE <br />SITE</span>
+                        <span>VISIT OUR CUSTOM CAKE <br />SITE</span>
                     </a>
                     <p>
-                        Are you intrested.....
+                        We ca create a memorable dessert for any special events,<br />
+                        occasions and celebrations.
                     </p>
                 </div>
                 <div class="box-fotter-r-bottom">
@@ -165,10 +166,10 @@
                             <a href="#">Journal</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="/Contact.aspx">Contact</a>
                         </li>
                         <li>
-                            <a href="#">Wholesale</a>
+                            <a href="#">Custom cake</a>
                         </li>
                         <li>
                             <a href="#">Terms of Service</a>
@@ -180,7 +181,7 @@
                             <a href="#">Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="#">Custom Production</a>
+                            <a href="#">...</a>
                         </li>
                     </ul>
                 </div>

@@ -48,13 +48,13 @@ public partial class Payment : System.Web.UI.Page
     {
         con.Close();
         con.Open();
-        cmd.CommandText = "Insert into [Order](product_name,Customer_id,product_qnt,Product_price,Product_id,Orderdate)values(@pname,@cusid,@qnt,@pprice,@pid,@orderdate)";
+        cmd.CommandText = "Insert into [Order](product_name,Customer_id,prodcut_qnt,Product_price,Product_id,Orderdate)values(@pname,@cusid,@qnt,@pprice,@pid,@orderdate)";
         cmd.Connection = con;
         foreach (DataRow dr in dataTable.Rows)
         {
             cmd.Parameters.AddWithValue("@pname", dr["product_name"]);
             cmd.Parameters.AddWithValue("@cusid", Session["Username"].ToString());
-            SqlParameter sqlParameter = cmd.Parameters.AddWithValue("@qnt", dr["product_qnt"]);
+            cmd.Parameters.AddWithValue("@qnt", dr["prodcut_qnt"]);
             cmd.Parameters.AddWithValue("@pprice", dr["Product_price"]);
             cmd.Parameters.AddWithValue("@pid", dr["Product_id"]);
             cmd.Parameters.AddWithValue("@orderdate", DateTime.Now.ToString());

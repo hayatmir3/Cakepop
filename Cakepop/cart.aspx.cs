@@ -12,7 +12,7 @@ public partial class cart : System.Web.UI.Page
         decimal price = 0;
         foreach (GridViewRow item in GridView1.Rows)
         {
-            price = price +Convert.ToDecimal(item.Cells[4].Text);
+            price = price +Convert.ToDecimal(item.Cells[3].Text);
         }
         amount.Text = "Total Amount: " + price.ToString();
     }
