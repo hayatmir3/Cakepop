@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title>Admin dashboard</title>
-    <link href="Assets/Css/Adminstyle.css" rel="stylesheet" type="text/css" />
+    <link href="../Assets/Css/Adminstyle.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
     <style>
@@ -28,7 +28,7 @@
     <form id="form1" runat="server">
         <div id="main">
             <div id="header">
-                <a href="#" class="logo"><img src="Assets/Img/Home/logo--01.svg" width="50" height="50" alt="" /></a>
+                <a href="#" class="logo"><img src="../Assets/Img/Home/logo--01.svg" width="50" height="50" alt="" /></a>
                 <asp:Button Text="sign out" runat="server" ID="adminsignout" CssClass="buttsign" OnClick="adminsignout_Click" />
                 <div id="nav">
                     <ul id="top-navigation">

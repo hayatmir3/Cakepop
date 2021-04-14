@@ -106,7 +106,7 @@
                     <div class="into-cake">
                         <div class="into">
                             <p class="linebox"></p>
-                            <p><a href="product.aspx?cate=Cake">Cake</a></p>
+                            <p><a href="/product.aspx?cate=Cake">Cake</a></p>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                     <div class="into-cupcake">
                         <div class="into">
                             <p class="linebox"></p>
-                            <p><a href="product.aspx?cate=cupcake">CupCake</a></p>
+                            <p><a href="/product.aspx?cate=cupcake">CupCake</a></p>
                         </div>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
                     <div class="into-babka">
                         <div class="into">
                             <p class="linebox"></p>
-                            <p><a href="product.aspx?cate=Babka">Babka</a></p>
+                            <p><a href="/product.aspx?cate=Babka">Babka</a></p>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
                     <div class="into-supplies">
                         <div class="into">
                             <p class="linebox"></p>
-                            <p> <a href="product.aspx?cate=CakeSupplies">Cake <br /> supplies</a></p>
+                            <p> <a href="/product.aspx?cate=CakeSupplies">Cake <br /> supplies</a></p>
                         </div>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
                     <div class="into-blog-box">
                         <div class="into-blog">
                             <p class="linebox-blog"></p>
-                            <p><a href="Journal.aspx">Journal</a></p>
+                            <p><a href="/Journal.aspx">Journal</a></p>
                         </div>
                     </div>
                 </div>

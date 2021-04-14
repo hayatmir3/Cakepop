@@ -58,8 +58,8 @@ public partial class addprod : System.Web.UI.Page
         }
 
         //image save command...
-        image.SaveAs(Request.PhysicalApplicationPath + "Assets/Img/Product/" + image.FileName.ToString());
-        imagefile = "Assets/Img/Product/" + image.FileName.ToString();
+        image.SaveAs(Request.PhysicalApplicationPath + "/Assets/Img/Product/" + image.FileName.ToString());
+        imagefile = "/Assets/Img/Product/" + image.FileName.ToString();
         //start insert...
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString.ToString());
         SqlCommand cmd = new SqlCommand();
@@ -79,8 +79,8 @@ public partial class addprod : System.Web.UI.Page
         int Result = cmd.ExecuteNonQuery();
         if (Result > 0)
         {
-            Response.Redirect(Request.RawUrl);
             Addlbl.Text = "You have seccessfully added the product";
+            Response.Redirect(Request.RawUrl);
             //give it color... ( don't forget...)!!!
         }
 

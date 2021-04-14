@@ -23,11 +23,25 @@
             font-weight: 600;
             font-family: 'Gill Sans MT', sans-serif;
         }
+
+        .dropdownstyle {
+            width:420px;
+            padding: 5px 35px 5px 5px ;
+            font-family: 'Gill Sans MT', sans-serif;
+            font-size: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            height: 35px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url(/Assets/Img/Home/add.png) 96% / 15% no-repeat #ededed;
+            background-size: 16px 16px;
+        }
         </style>
         <div>
             <p style="margin-top: 40px; margin-left: 40px;">
-                <asp:DropDownList runat="server" ID="sorting" AutoPostBack="true" OnSelectedIndexChanged="Page_Load" Height="45px" Width="180" Font-Size="15px">
-                    <asp:ListItem text="sorting" Value="1"></asp:ListItem>
+                <asp:DropDownList runat="server" ID="sorting" AutoPostBack="true" OnSelectedIndexChanged="Page_Load" CssClass="dropdownstyle" >
+                    <asp:ListItem text="--sorting--" Value="1"></asp:ListItem>
                     <asp:ListItem text="low to haigh" Value="2"></asp:ListItem>
                     <asp:ListItem text="high to low" Value="3"></asp:ListItem>
                 </asp:DropDownList>

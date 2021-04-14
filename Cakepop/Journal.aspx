@@ -103,7 +103,7 @@
                             <div class="into-post">
                                 <div class="into">
                                     <p class="linebox"></p>
-                                    <p><a href="#">Apple Pie From Scratch</a></p>
+                                    <p><a href="/blog/post.aspx">Apple Pie From Scratch</a></p>
                                     <p style="font-size: 15px; color: #e7e7e7; position: absolute; top: 60px">by shaden on Apr 4, 2021</p>
                                 </div>
                             </div>
