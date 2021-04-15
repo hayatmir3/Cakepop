@@ -235,16 +235,16 @@ li a:hover, .has-submenu:hover .drop {
 .box-fotter-l-bottom {
     position: absolute;
     left: 100px;
-    top: 490px;
+    top: 500px;
 }
 
 .em-text-style {
     background-color: #505962;
     border-color: white;
     border-width: 1px;
-    width: 200px;
-    height: 35px;
-    color: #e3e5e8;
+    width: 300px;
+    height: 45px;
+    color: #b9bfc6;
     font-size: 11px;
     margin-right: 0px;
     margin-top: 35px;
@@ -254,11 +254,11 @@ li a:hover, .has-submenu:hover .drop {
 
 .butt-style {
     background-color: #b9bfc6;
-    width: 70px;
+    width: 80px;
     margin-left: 0;
     margin-top: 47px;
     padding: 0px;
-    height: 25px;
+    height: 35px;
     border: none;
     font-size: 12px;
     font-weight: 700;
@@ -270,14 +270,14 @@ li a:hover, .has-submenu:hover .drop {
 }
 
 .check-style input {
-    margin: 2px 5px 0px 0px;
-    width: 15px;
-    height: 15px;
+    margin: 8px 5px 0px 0px;
+    width: 18px;
+    height: 18px;
 }
 
 .social-icon {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding-left: 5px;
     letter-spacing: 10px;
 }

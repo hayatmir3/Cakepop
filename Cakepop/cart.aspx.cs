@@ -12,7 +12,7 @@ public partial class cart : System.Web.UI.Page
         decimal price = 0;
         foreach (GridViewRow item in GridView1.Rows)
         {
-            price = price +Convert.ToDecimal(item.Cells[3].Text);
+            price = price +Convert.ToDecimal(item.Cells[2].Text);
         }
         amount.Text = "Total Amount: " + price.ToString();
     }
@@ -21,11 +21,11 @@ public partial class cart : System.Web.UI.Page
     {
         if (Session["Username"] == null)
         {
-            Response.Redirect("Login.aspx");
+            Response.Redirect("/Login.aspx");
         }
         else
         {
-            Response.Redirect("Payment.aspx");
+            Response.Redirect("/Payment.aspx");
         }
     }
 }
