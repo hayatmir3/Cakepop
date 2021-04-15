@@ -127,11 +127,11 @@
                     <h4> SOCIAL LINKs</h4>
                     <div id="social-icon" class="social-icon">
                         <a>
-                            <span>
+                            <span style="color: #fff;">
                                 <i class="fab fa-twitter" style="font-size:23px;"></i>
                             </span>
                         </a>
-                        <a href="https://www.instagram.com/cake.pop.corner/">
+                        <a href="https://www.instagram.com/cake.pop.corner/" style="color: #fff; text-decoration: none;">
                             <span>
                                 <i class="fab fa-instagram" style="font-size:23px;"></i>
                             </span>
